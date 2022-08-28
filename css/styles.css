@@ -7,7 +7,7 @@
 /* GENERAL */
 
 .header a:hover {
-    color: aqua;
+    color: firebrick;
     font-weight: bold;
 }
 
@@ -31,6 +31,20 @@
     text-decoration: none;
     background-color: darkslategray;
     text-decoration-color: azure;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: tan;
+    --bs-nav-pills-link-active-color: black;
+}
+
+.nav-pills:hover{
+    --bs-nav-pills-link-active-bg: firebrick;
+    --bs-nav-pills-link-active-color: white;
+}
+
+.nav {
+    --bs-nav-link-color: white (--bs-link-color);
 }
 
 main {
@@ -73,7 +87,7 @@ main {
 
 /* CONTACTO */
 
-.form{
+.form {
     font-size: x-large;
     margin: 50px;
     display: flex;
@@ -82,8 +96,43 @@ main {
     flex-direction: column;
 }
 
-.form-floating{
-    width: 50%;
+.from-control:focus{
+    border-color: tan;
+    border-top-color: tan;
+    border-right-color: tan;
+    border-bottom-color: tan;
+    border-left-color: tan;
+    box-shadow: tan;
+}
+
+.btn-primary {
+    --bs-btn-bg: tan;
+    --bs-btn-border-color: tan;
+    --bs-btn-hover-bg: brown;
+    --bs-btn-hover-border-color: brown;
+    --bs-btn-active-bg: brown;
+    --bs-btn-active-border-color: brown;
+    --bs-btn-disabled-bg: brown;
+    --bs-btn-disabled-border-color: brown;
+}
+
+.form-control:focus {
+    color: #292121;
+    background-color: #fff;
+    border-color: #fe8686;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: brown;
+    border-color: brown;
+}
+
+.form-check-input:focus {
+    border-color: #fe8686;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
 }
 
 /* GALERIA */
